@@ -4,9 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>CryptoCoins</title>
 </head>
 <body>
-    
+    <header>
+        <label for="symbol">Pair</label>
+        <select id="symbol">
+            <option selected>BTCUSDT</option>
+            <option>ETHUSDT</option>
+            <option>LTCUSDT</option>
+        </select>
+        <label for="interval">Interval</label>
+        <select id="interval">
+            <option selected>1m</option>
+            <option>5m</option>
+            <option>1h</option>
+            <option>4h</option>
+            <option>1d</option>
+        </select>
+        <div class="wrapper">
+            <div id="chart">Chart</div>
+            <div class="trades-container">
+                <div class="trades-container-header">
+                    <span>Price</span>
+                    <span>Quantity</span>
+                    <span>Amount</span>
+                </div>
+                <div class="trades-container-list">
+                    <div class="trade buy">
+                        <span>10000.00</span>
+                        <span>2</span>
+                        <span>20000.00</span>
+                    </div>
+                    <div class="trade sell">
+                        <span>10000.00</span>
+                        <span>2</span>
+                        <span>20000.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
