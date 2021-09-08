@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>CryptoCoins</title>
 </head>
+
 <body>
     <header>
         <label for="symbol">Pair</label>
@@ -23,28 +25,34 @@
             <option>4h</option>
             <option>1d</option>
         </select>
-        <div class="wrapper">
-            <div id="chart">Chart</div>
-            <div class="trades-container">
-                <div class="trades-container-header">
-                    <span>Price</span>
-                    <span>Quantity</span>
-                    <span>Amount</span>
+    </header>
+    <div class="wrapper">
+        <div id="chart"></div>
+
+        <div class="trades-container">
+            <div class="trades-container-header">
+                <span>Price</span>
+                <span>Quantity</span>
+                <span>Amount</span>
+            </div>
+            <div class="trades-container-list">
+                <div class="trade buy">
+                    <span>10000.00</span>
+                    <span>2</span>
+                    <span>20000.00</span>
                 </div>
-                <div class="trades-container-list">
-                    <div class="trade buy">
-                        <span>10000.00</span>
-                        <span>2</span>
-                        <span>20000.00</span>
-                    </div>
-                    <div class="trade sell">
-                        <span>10000.00</span>
-                        <span>2</span>
-                        <span>20000.00</span>
-                    </div>
+                <div class="trade sell">
+                    <span>10000.00</span>
+                    <span>2</span>
+                    <span>20000.00</span>
                 </div>
             </div>
         </div>
-    </header>
+        
+    </div>
+    <!-- library for charts -->
+    <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+    <script type="text/javascript" src="main.js"></script>
 </body>
+
 </html>
