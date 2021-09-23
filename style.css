@@ -8,6 +8,10 @@ body{
     height: 80vh;
 }
 
+.trades-container{
+    overflow-y: auto;
+}
+
 .trades-container-header, .trade{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
